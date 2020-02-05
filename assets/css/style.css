@@ -9875,6 +9875,32 @@ h3 {
     border-color: #dee2e6;
   }
 }
+@media screen and (min-width: 601px) {
+  .header {
+    height: 100vh;
+    background-image: url("../img/post-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    height: 100vh;
+    background-image: url("../img/post-image_responsive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 601px) {
+  .naomi {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .naomi {
+    text-align: center;
+  }
+}
 /* Reset*/
 body {
   margin: 0;
@@ -9884,18 +9910,82 @@ img {
   max-width: 100%;
 }
 
+.buttons1 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  background-color: #6c6e70 !important;
+  border-radius: 25px;
+}
+
 .article {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   color: #6c6e70;
   font-weight: 400;
-  font-size: 12px;
-  margin-left: 5%;
-  margin-right: 5%;
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+.article, .naomi {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.fecha {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  margin-top: 4rem;
+}
+
+.destacable {
+  color: #d76c69;
+}
+
+.naomi {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .naomi-foto {
   border-radius: 100%;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  font-size: 18px;
+  padding-left: 0;
+}
+
+a {
+  color: #ecbcba;
+}
+a:hover {
+  color: #121619;
+  text-decoration: none;
+}
+
+.naomi-parrafo {
+  color: #6c6e70;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.pag {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  background-color: #e6e7e7;
 }
 
 .bg-dark {
@@ -9915,30 +10005,49 @@ img {
 .blog {
   color: #e56353 !important;
 }
+.blog:hover {
+  color: #ecbcba !important;
+}
 
 .navbar-collapse {
-  padding-left: 50%;
+  padding-left: 45%;
 }
 
 .navbar-brand {
   padding-left: 10%;
 }
 
-.header {
-  height: 100vh;
-  background-image: url("../img/post-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 h1 {
   color: #fff;
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 70px;
   font-style: italic;
-  vertical-align: middle;
   text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 70px;
+    padding-right: 22%;
+    padding-left: 22%;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}
+footer {
+  background-color: #222323;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.logo-footer {
+  height: 7vh;
 }
 
 /*# sourceMappingURL=style.css.map */

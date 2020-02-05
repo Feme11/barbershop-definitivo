@@ -3,11 +3,60 @@
   font-family: $roboto;
   color: $nickel;
   font-weight: $regular;
-  font-size: $small;
-  margin-left: 5%;
-  margin-right: 5%;
+  font-size: $medium;
+  line-height: 2.5;
 }
 
+.article, .naomi {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.fecha {
+  font-family: $playfair;
+  font-size: $large;
+  margin-top: 4rem;
+}
+.destacable {
+  color: $ruddypink;
+}
+
+.naomi {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .naomi-foto {
   border-radius: 100%;
+}
+h2 {
+  font-family: $playfair;
+  font-weight: $black;
+  font-style: italic;
+  font-size: $x-large;
+}
+ul {
+  list-style: none;
+  font-size: $large;
+  padding-left: 0;
+}
+
+a {
+  color: $spanishpink;
+  @include hover(){
+    color: $eerie-black;
+    text-decoration: none;
+  }
+}
+
+.naomi-parrafo {
+  color: $nickel;
+  font-weight: $regular;
+  font-size: $medium;
+  line-height: 2;
+}
+
+.pag {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  background-color: $platinum;
 }
