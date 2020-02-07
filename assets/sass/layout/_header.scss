@@ -1,4 +1,24 @@
-h1 {
+// backgorund img
+@media screen and (min-width: 601px) {
+  .header {
+    height: 100vh;
+    background-image: url("../img/post-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 100vh;
+    background-image: url("../img/post-image_responsive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+//
+
+.header__title {
   color: $white;
   font-family: $playfair;
   font-weight: $black;
@@ -7,17 +27,19 @@ h1 {
 }
 
 @media screen and (min-width: 601px) {
-  h1 {
+  .header__title {
     font-size: $xx-large;
     padding-right:22%;
     padding-left: 22%;
-    padding-top: 3rem;
+    padding-top: 14rem;
     }
 }
+
 @media screen and (max-width: 600px) {
-  h1 {
+  .header__title {
     font-size: $x-large;
     padding-right:15%;
     padding-left: 15%;
+    padding-top: 13rem;
   }
 }

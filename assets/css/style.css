@@ -9876,22 +9876,6 @@ h3 {
   }
 }
 @media screen and (min-width: 601px) {
-  .header {
-    height: 100vh;
-    background-image: url("../img/post-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-@media screen and (max-width: 600px) {
-  .header {
-    height: 100vh;
-    background-image: url("../img/post-image_responsive.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 601px) {
   .naomi {
     text-align: left;
   }
@@ -10017,7 +10001,27 @@ a:hover {
   padding-left: 10%;
 }
 
-h1 {
+.navbar-toggler {
+  border: none;
+}
+
+@media screen and (min-width: 601px) {
+  .header {
+    height: 100vh;
+    background-image: url("../img/post-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    height: 100vh;
+    background-image: url("../img/post-image_responsive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.header__title {
   color: #fff;
   font-family: "Playfair Display", serif;
   font-weight: 900;
@@ -10026,17 +10030,19 @@ h1 {
 }
 
 @media screen and (min-width: 601px) {
-  h1 {
+  .header__title {
     font-size: 70px;
     padding-right: 22%;
     padding-left: 22%;
+    padding-top: 14rem;
   }
 }
 @media screen and (max-width: 600px) {
-  h1 {
+  .header__title {
     font-size: 30px;
     padding-right: 15%;
     padding-left: 15%;
+    padding-top: 13rem;
   }
 }
 footer {
