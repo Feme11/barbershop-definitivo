@@ -10087,8 +10087,15 @@ footer {
   text-align: center;
 }
 
-.logo-footer {
-  height: 7vh;
+@media screen and (min-width: 601px) {
+  .footer__logo {
+    height: 7vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__logo {
+    height: 5vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
