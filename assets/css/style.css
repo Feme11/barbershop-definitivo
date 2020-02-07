@@ -9875,16 +9875,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
-@media screen and (min-width: 601px) {
-  .naomi {
-    text-align: left;
-  }
-}
-@media screen and (max-width: 600px) {
-  .naomi {
-    text-align: center;
-  }
-}
 /* Reset*/
 body {
   margin: 0;
@@ -9894,14 +9884,28 @@ img {
   max-width: 100%;
 }
 
-.buttons1 {
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+
+.article__buttons {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
 .btn {
-  background-color: #6c6e70 !important;
   border-radius: 25px;
+}
+
+.btn-light-g {
+  color: #fff;
+  background-color: #6c6e70;
+}
+.btn-light-g:hover {
+  background-color: #d1d1d1;
+  border: #d1d1d1;
+  color: #fff;
 }
 
 .article {
@@ -9918,58 +9922,89 @@ img {
   margin-right: 10%;
 }
 
-.fecha {
+.article__fecha {
   font-family: "Playfair Display", serif;
   font-size: 18px;
   margin-top: 4rem;
 }
 
-.destacable {
+.article__destacable {
   color: #d76c69;
 }
 
 .naomi {
+  font-family: "Roboto", sans-serif;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.naomi-foto {
+@media screen and (min-width: 601px) {
+  .naomi {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .naomi {
+    text-align: center;
+  }
+}
+.naomi__foto {
   border-radius: 100%;
 }
 
-h2 {
+@media screen and (max-width: 600px) {
+  .naomi__foto {
+    width: 50%;
+  }
+}
+.naomi__contacto__title {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: italic;
   font-size: 30px;
 }
 
-ul {
+.naomi__ul {
   list-style: none;
   font-size: 18px;
   padding-left: 0;
 }
 
-a {
+.naomi__contacto__link {
   color: #ecbcba;
 }
-a:hover {
+.naomi__contacto__link:hover {
   color: #121619;
   text-decoration: none;
 }
 
-.naomi-parrafo {
+.naomi__parrafo {
   color: #6c6e70;
   font-weight: 400;
   font-size: 16px;
   line-height: 2;
 }
 
-.pag {
+.btn-pag {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
   background-color: #e6e7e7;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-white {
+  background-color: #fff;
+  border: 1px solid #e6e7e7;
+}
+
+.anterior {
+  color: #d1d1d1;
+}
+
+.btn-active {
+  background-color: #121619;
+  color: #fff;
 }
 
 .bg-dark {

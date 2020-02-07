@@ -1,8 +1,18 @@
-.buttons1 {
+// buttons article (main-section)
+.article__buttons {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 .btn {
-  background-color: $nickel !important;
   border-radius: 25px;
 }
+.btn-light-g {
+  color: $white;
+  background-color: $nickel;
+  @include hover(){
+    background-color: $lightgray;
+    border: $lightgray;
+    color: $white;
+  }
+}
+//

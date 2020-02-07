@@ -11,35 +11,56 @@
   margin-left: 10%;
   margin-right: 10%;
 }
-.fecha {
+.article__fecha {
   font-family: $playfair;
   font-size: $large;
   margin-top: 4rem;
 }
-.destacable {
+.article__destacable {
   color: $ruddypink;
 }
 
 .naomi {
+  font-family: $roboto;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.naomi-foto {
+
+@media screen and (min-width: 601px) {
+  .naomi {
+    text-align: left;
+    }
+}
+@media screen and (max-width: 600px) {
+  .naomi {
+    text-align: center;
+  }
+}
+
+.naomi__foto {
   border-radius: 100%;
 }
-h2 {
+
+@media screen and (max-width: 600px) {
+  .naomi__foto {
+    width: 50%;
+  }
+}
+
+.naomi__contacto__title {
   font-family: $playfair;
   font-weight: $black;
   font-style: italic;
   font-size: $x-large;
 }
-ul {
+
+.naomi__ul {
   list-style: none;
   font-size: $large;
   padding-left: 0;
 }
 
-a {
+.naomi__contacto__link {
   color: $spanishpink;
   @include hover(){
     color: $eerie-black;
@@ -47,16 +68,31 @@ a {
   }
 }
 
-.naomi-parrafo {
+.naomi__parrafo {
   color: $nickel;
   font-weight: $regular;
   font-size: $medium;
   line-height: 2;
 }
 
-.pag {
+.btn-pag {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   text-align: center;
   background-color: $platinum;
+  font-family: $roboto;
+}
+
+.btn-white {
+  background-color: $white;
+  border: 1px solid $platinum;
+}
+
+.anterior {
+  color: $lightgray;
+}
+
+.btn-active {
+  background-color: $eerie-black;
+  color: $white;
 }
